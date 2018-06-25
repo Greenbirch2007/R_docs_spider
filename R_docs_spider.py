@@ -32,12 +32,17 @@ def parse_one_page(html):
                       '.*?<td>(.*?)</td>',re.S)
     items = re.findall(patt,html)
     for i in items:
-
         yield {
-
-            'name':'i[0]',
-            'theme':'i[1]',
+            i[0]:i[1],
         }
+
+
+
+        # yield {
+        #
+        #     'name':i[0],
+        #     'theme':i[1],
+        # }
         # yield i[0],i[1]   返回的是列表形式
 
 
@@ -56,13 +61,15 @@ def parse_one_page(html):
         # 第二种写法  单独一个就可以
     # json.dump(content, open('result.txt', 'a', encoding='utf-8'))
 
-
-
-
-
-
-
 #存入mysql
+
+
+
+
+
+
+
+
 #存入MongoDB
 #
 # def insert_to_Mongo(item):
@@ -76,12 +83,10 @@ def parse_one_page(html):
 def main():
     url = 'https://cloud.r-project.org/web/views/'
     html = get_one_page(url)
-    print(html)
-    # parse_one_page(html)
-    # for item in parse_one_page(html):
-    #     for i in item:
-    #         print(i)
-        # write_to_file(item)
+    items = parse_one_page(html)
+    for item in items:
+        # insert_to_Mongo(item)
+        #  write_to_file(item)
 
 
 
