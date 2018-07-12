@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e118dd79-0062-4a91-bb86-4577c37a70fd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/R_docs_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_docs_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database_prac.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_prac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_docs_spider.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,23 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="database_prac.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database_prac.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database_prac.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="270">
               <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="R_docs_spider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
+      <file leaf-file-name="R_doc_downloader.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/R_doc_downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="74" selection-start-line="74" selection-start-column="2" selection-end-line="79" selection-end-column="19" />
-              <folding>
-                <element signature="e#26#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4212">
+              <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
             </state>
           </provider>
         </entry>
@@ -59,6 +53,7 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/database_prac.py" />
         <option value="$PROJECT_DIR$/R_docs_spider.py" />
+        <option value="$PROJECT_DIR$/R_doc_downloader.py" />
       </list>
     </option>
   </component>
@@ -168,21 +163,22 @@
     </servers>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="714" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="846" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2153025" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2153025" />
-      <window_info active="true" anchor="right" id="Mongo Explorer" order="3" visible="true" weight="0.34015152" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.34505022" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291815" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928057" visible="true" weight="0.17272727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928057" visible="true" weight="0.17216642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25405785" />
-      <window_info id="Favorites" order="2" sideWeight="0.5007194" side_tool="true" weight="0.36896196" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007194" side_tool="true" weight="0.36896196" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -202,16 +198,16 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.7309353" />
       <window_info id="DB Browser" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="right" id="Mongo Explorer" order="3" visible="true" weight="0.32947367" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="3" sideWeight="0.5007194" side_tool="true" weight="0.36896196" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -225,6 +221,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="74" selection-start-line="74" selection-start-column="2" selection-end-line="79" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prac.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
@@ -234,9 +244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#26#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -251,9 +258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="76" column="49" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="49" />
-          <folding>
-            <element signature="e#26#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -384,19 +388,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="74" selection-start-line="74" selection-start-column="2" selection-end-line="79" selection-end-column="19" />
-          <folding>
-            <element signature="e#26#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="270">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_doc_downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4212">
+          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
         </state>
       </provider>
     </entry>
