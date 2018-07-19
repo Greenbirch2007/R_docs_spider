@@ -148,7 +148,7 @@ def getFile(url):
     if response.status_code == 200:
         for i in themes:
 
-            with open("/home/karson/R-theme-docs/%s/%s .pdf" % theme  %url.split("/")[-1], "wb") as f:  # 切片之后优化了命名
+            with open("/home/karson/R-theme-docs/%s/%s .pdf" % theme  %url.split("/")[0:-4], "wb") as f:  # 切片之后优化了命名
                 f.write(response.content)
                 f.close()
     else:
