@@ -109,28 +109,29 @@ from bs4 import BeautifulSoup
 from pymongo import MongoClient
 import os
 
+
+# 设置一个全局变量
+
+
+
+
+themes = ['Bayesian', 'ChemPhys', 'ClinicalTrials', 'Cluster', 'DifferentialEquations', 'Distributions', 'Econometrics', 'Environmetrics', 'ExperimentalDesign', 'ExtremeValue', 'Finance', 'FunctionalData', 'Genetics', 'Graphics', 'HighPerformanceComputing', 'MachineLearning', 'MedicalImaging', 'MetaAnalysis', 'ModelDeployment', 'Multivariate', 'NaturalLanguageProcessing', 'NumericalMathematics', 'OfficialStatistics', 'Optimization', 'Pharmacokinetics', 'Phylogenetics', 'Psychometrics', 'ReproducibleResearch', 'Robust', 'SocialSciences', 'Spatial', 'SpatioTemporal', 'Survival', 'TimeSeries', 'WebTechnologies', 'gR']
+for theme in themes:
+    yield theme
+
+url ='https://cloud.r-project.org/web/views/' + str(theme) + '.html'
+print(url)
+
+
+
 #传入url,获取响应
 def get_one_page(url):
-
     headers = {
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
     }
     response = requests.get(url,headers=headers)
     html =response.text
     return html
-
-
-
-def getFile(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open("/home/karson/Bayesian/%s .pdf" % url.split("/")[-1], "wb") as f:  # 切片之后优化了命名
-            f.write(response.content)
-            f.close()
-    else:
-        pass
-
-
 
 
 #解析pdf文件的下载地址
@@ -146,8 +147,8 @@ def getFile(url):
     response = requests.get(url)
     if response.status_code == 200:
         for i in themes:
-            print(i)
-            with open("/home/karson/R-theme-docs/themes/%s .pdf" % url.split("/")[-1], "wb") as f:  # 切片之后优化了命名
+
+            with open("/home/karson/R-theme-docs/%s/%s .pdf" % theme  %url.split("/")[-1], "wb") as f:  # 切片之后优化了命名
                 f.write(response.content)
                 f.close()
     else:
@@ -156,27 +157,31 @@ def getFile(url):
 
 
 
-url = "https://cloud.r-project.org/web/views/ChemPhys.html"
-html = get_one_page(url)
+html = get_one_page(start_link)
 link = parse_one_page(html)
 for i in link:
     getFile(i)
-print("下载完成了")
+print("下载完成")
 
 
 
+
+
+
+
+
+
+# 平静在于有两次遍历，两次Yield   1.请求时和存储是需要一个公共的主题，这个主题还是一个遍历的！
 # 1.先批量创建文件夹2.根据每一个主题取下载，遍历文件链接 3. 遍历主题链接
-
-def make_dirs(file_path):
-    if not os.
-
-
+#批量创建文件夹
+# import os
+#
+# themes = ['Bayesian', 'ChemPhys', 'ClinicalTrials', 'Cluster', 'DifferentialEquations', 'Distributions', 'Econometrics', 'Environmetrics', 'ExperimentalDesign', 'ExtremeValue', 'Finance', 'FunctionalData', 'Genetics', 'Graphics', 'HighPerformanceComputing', 'MachineLearning', 'MedicalImaging', 'MetaAnalysis', 'ModelDeployment', 'Multivariate', 'NaturalLanguageProcessing', 'NumericalMathematics', 'OfficialStatistics', 'Optimization', 'Pharmacokinetics', 'Phylogenetics', 'Psychometrics', 'ReproducibleResearch', 'Robust', 'SocialSciences', 'Spatial', 'SpatioTemporal', 'Survival', 'TimeSeries', 'WebTechnologies', 'gR']
+# base = "/home/karson/R-theme-docs/"
+# for i in themes:
+#     file_name = base + str(i)
+#     os.mkdir(file_name)
 # 结束了发给邮件提示下？  效率再提高一些！已经可以正常使用了！
-
-
-
-
-
 # 解析返回页面 进行字符串拼接
 # 导出excel文件  #导出json格式
 #  创建到处文档 格式自选  (dict --->>>  str )
