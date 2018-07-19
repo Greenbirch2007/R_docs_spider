@@ -1,24 +1,8 @@
 #-*- coding:utf-8 -*-
 
-# 保存pdf文件
 
 
-proxies = {"https":"https://118.31.220.3"}
-
-import requests
-import re 
-from lxml import etree
-from bs4 import BeautifulSoup
-
-# /html/body/ul[1]/li[1]/a
-# /html/body/ul[1]/li[2]/a  
-
-def get_all_links(url):
-	response = requests.get(url,timeout=10)
-	return response.text
-
-
-
+'''
 Bayesian=[]
 ChemPhys=[]
 ClinicalTrials=[]
@@ -56,13 +40,27 @@ TimeSeries=[]
 WebTechnologies=[]
 gR=[]
 
+'''
 
 # 解析的部分
 
 # url ="https://cloud.r-project.org/web/views/"
 
 
+# 获取所有链接的请求
+# def get_all_links(url):
+# 	response = requests.get(url,timeout=10)
+# 	return response.text
 
+# 这个地方尝试使用bs4
+# html = get_all_links(url)
+# patt = re.compile('<td><a href=".*?">(.*?)</a></td>')
+# items = re.findall(patt,html)
+# for i in items:
+# 	print('https://cloud.r-project.org/web/views/'+i + '.html')
+
+
+# 下载的主题url列表
 """
 https://cloud.r-project.org/web/views/Bayesian.html
 https://cloud.r-project.org/web/views/ChemPhys.html
@@ -103,76 +101,13 @@ https://cloud.r-project.org/web/views/gR.html
 """
 
 
-# html = get_all_links(url)
-# selector=etree.HTML(html)
-# names = selector.xpath("/html/body/ul[1]/li//text()")
-# print(names)
-
-# 这个地方尝试使用bs4 
-# html = get_all_links(url)
-# patt = re.compile('<td><a href=".*?">(.*?)</a></td>')
-# items = re.findall(patt,html)
-# for i in items:
-# 	print('https://cloud.r-project.org/web/views/'+i + '.html')
-
-# for i in names:
-# 	Finance.append(i)
-	
-# print(Finance)
-
- # 尝试来一个列表
-
-# /html/body/table/tbody/tr[1]/td[1]/a
-# /html/body/table/tbody/tr[1]/td[2]
-# /html/body/table/tbody/tr[2]/td[1]/a
-
-
-
-# url ="https://cloud.r-project.org/web/views/Bayesian.html"
-# html =get_all_links(url)
-# selector=etree.HTML(html)
-# names = selector.xpath("/html/body/ul[1]/li//text()")
-# for i in names:
-# 	pdf_link ="https://cloud.r-project.org/web/packages/"+  i+ "/" +i + ".pdf"
-
-
-
-
-
-# pdf 文件下载
-def getFile(url):
-	u = requests.get(url)
-	if u.response.status_code == 200:
-		s = 0   # 命名是一个很费劲的事！能省则省
-		with open("E:\\ %s .pdf" % s ,"wb") as f:
-			f.write(u.content)
-			f.close()
-		s += 1
-	else:
-		pass
-
-
-url = "https://cloud.r-project.org/web/packages/abc/abc.pdf"
-getFile(url)
-
-
-
-# https://cloud.r-project.org/web/packages/abc/abc.pdf  # 文件的链接
-
-
-#！ -×- coding:utf-8 -*-
-
 
 import requests
 import re
+from lxml import etree
+from bs4 import BeautifulSoup
 from pymongo import MongoClient
-
-
-
-
-
-
-# 尝试用正则 和bs4分别抓取
+import os
 
 #传入url,获取响应
 def get_one_page(url):
@@ -186,10 +121,63 @@ def get_one_page(url):
 
 
 
+def getFile(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open("/home/karson/Bayesian/%s .pdf" % url.split("/")[-1], "wb") as f:  # 切片之后优化了命名
+            f.write(response.content)
+            f.close()
+    else:
+        pass
+
+
+
+
+#解析pdf文件的下载地址
+def parse_one_page(html):
+    selector=etree.HTML(html)
+    names = selector.xpath("/html/body/ul[1]/li//text()")
+    for i in names:
+        pdf_link ="https://cloud.r-project.org/web/packages/"+  i+ "/" + i + ".pdf"
+        yield pdf_link
+
+# pdf 文件下载
+def getFile(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        for i in themes:
+            print(i)
+            with open("/home/karson/R-theme-docs/themes/%s .pdf" % url.split("/")[-1], "wb") as f:  # 切片之后优化了命名
+                f.write(response.content)
+                f.close()
+    else:
+        pass
+
+
+
+
+url = "https://cloud.r-project.org/web/views/ChemPhys.html"
+html = get_one_page(url)
+link = parse_one_page(html)
+for i in link:
+    getFile(i)
+print("下载完成了")
+
+
+
+# 1.先批量创建文件夹2.根据每一个主题取下载，遍历文件链接 3. 遍历主题链接
+
+def make_dirs(file_path):
+    if not os.
+
+
+# 结束了发给邮件提示下？  效率再提高一些！已经可以正常使用了！
+
+
+
+
 
 # 解析返回页面 进行字符串拼接
-
-
 # 导出excel文件  #导出json格式
 #  创建到处文档 格式自选  (dict --->>>  str )
 # def write_to_file(content):
@@ -221,34 +209,17 @@ def get_one_page(url):
 #     result = p.insert(item)  # 添加内容
 #     print(result)
 
-
-def main():
-    url = 'https://cloud.r-project.org/web/views/'
-    html = get_one_page(url)
-    items = parse_one_page(html)
-    for item in items:
+#
+# def main():
+#     url = 'https://cloud.r-project.org/web/views/'
+#     html = get_one_page(url)
+#     items = parse_one_page(html)
+#     for item in items:
         # insert_to_Mongo(item)
         #  write_to_file(item)
 
 
-
-
-if __name__ == '__main__':
-    main()
-
-
-
-
-
-
-
-
-
-
 # 用得到的主题名称的遍历元素作为命名
-
-
-
 # if __name__ == "__main__":
 # 	url = "https://cloud.r-project.org/web/packages/fTrading/fTrading.pdf"
 # 	getFile(url)

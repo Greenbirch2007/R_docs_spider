@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e118dd79-0062-4a91-bb86-4577c37a70fd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/R_docs_spider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/005ZkzAJly1fslb2lee2kj313v0j30vr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_doc_downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/R_doc_downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,20 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="database_prac.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database_prac.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="R_doc_downloader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/R_doc_downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4212">
-              <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+            <state relative-caret-position="323">
+              <caret line="173" column="33" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
+              <folding>
+                <element signature="e#3103#3118#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,9 +47,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/links" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/database_prac.py" />
         <option value="$PROJECT_DIR$/R_docs_spider.py" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/R_doc_downloader.py" />
       </list>
     </option>
@@ -66,7 +63,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,6 +74,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -96,7 +93,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.R_docs_spider">
+  <component name="RunManager" selected="Python.R_doc_downloader">
+    <configuration name="R_doc_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="R_docs_spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/R_doc_downloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="R_docs_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="R_docs_spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,9 +151,11 @@
     <list>
       <item itemvalue="Python.R_docs_spider" />
       <item itemvalue="Python.database_prac" />
+      <item itemvalue="Python.R_doc_downloader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.R_doc_downloader" />
         <item itemvalue="Python.R_docs_spider" />
         <item itemvalue="Python.database_prac" />
       </list>
@@ -163,19 +180,19 @@
     </servers>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="846" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="714" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2153025" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.046263345" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.34505022" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291815" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928057" visible="true" weight="0.17216642" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928057" visible="true" weight="0.1621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25405785" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
       <window_info id="Favorites" order="2" sideWeight="0.5007194" side_tool="true" weight="0.36896196" />
@@ -188,26 +205,26 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928057" weight="0.25405785" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2153025" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928057" visible="true" weight="0.1621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25405785" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7309353" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="DB Browser" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="right" id="Mongo Explorer" order="3" visible="true" weight="0.32947367" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.34505022" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="3" sideWeight="0.5007194" side_tool="true" weight="0.36896196" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291815" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -221,18 +238,59 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/links">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_doc_downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="128" column="19" lean-forward="true" selection-start-line="128" selection-start-column="19" selection-end-line="128" selection-end-column="19" />
+          <folding>
+            <element signature="e#3103#3118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/R_doc_downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4029">
+          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+          <folding>
+            <element signature="e#3103#3118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prac.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="74" selection-start-line="74" selection-start-column="2" selection-end-line="79" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -240,13 +298,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -254,13 +306,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="76" column="49" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -296,13 +342,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/database_prac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -317,13 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2628">
@@ -331,13 +365,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2628">
@@ -345,13 +373,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2628">
@@ -359,13 +381,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2754">
@@ -373,34 +389,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/R_docs_spider.py" />
+    <entry file="file://$PROJECT_DIR$/005ZkzAJly1fslb2lee2kj313v0j30vr.jpg" />
     <entry file="file://$PROJECT_DIR$/links">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/R_docs_spider.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database_prac.py">
+    <entry file="file://$PROJECT_DIR$/result.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
+        <state relative-caret-position="-1402" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_prac.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/R_doc_downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4212">
-          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+        <state relative-caret-position="323">
+          <caret line="173" column="33" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
+          <folding>
+            <element signature="e#3103#3118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
