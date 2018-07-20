@@ -1,0 +1,15 @@
+1532057553203	geckodriver	INFO	geckodriver 0.18.0
+1532057553207	geckodriver	INFO	Listening on 127.0.0.1:47157
+1532057554510	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1532057558844	Marionette	INFO	Enabled via --marionette
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1532057562560	Marionette	INFO	Listening on port 44357
+1532057562654	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532057613791	geckodriver	INFO	geckodriver 0.18.0
+1532057613800	geckodriver	INFO	Listening on 127.0.0.1:45131
+1532057614943	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1532057616300	Marionette	INFO	Enabled via --marionette
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead
+1532057620110	Marionette	INFO	Listening on port 43401
+1532057620171	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

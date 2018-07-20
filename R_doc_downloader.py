@@ -110,29 +110,24 @@ from pymongo import MongoClient
 import os
 
 
-# 设置一个全局变量
+# 设置一个全局变量 全局变量不能遍历？
+# themes = ['Bayesian', 'ChemPhys', 'ClinicalTrials', 'Cluster', 'DifferentialEquations', 'Distributions', 'Econometrics', 'Environmetrics', 'ExperimentalDesign', 'ExtremeValue', 'Finance', 'FunctionalData', 'Genetics', 'Graphics', 'HighPerformanceComputing', 'MachineLearning', 'MedicalImaging', 'MetaAnalysis', 'ModelDeployment', 'Multivariate', 'NaturalLanguageProcessing', 'NumericalMathematics', 'OfficialStatistics', 'Optimization', 'Pharmacokinetics', 'Phylogenetics', 'Psychometrics', 'ReproducibleResearch', 'Robust', 'SocialSciences', 'Spatial', 'SpatioTemporal', 'Survival', 'TimeSeries', 'WebTechnologies', 'gR']
+# for theme in themes:
+#     yield theme
+#
+# url ='https://cloud.r-project.org/web/views/' + str(theme) + '.html'
+# print(url)
 
+# proxies = {"https":"https://125.122.116.46"}
 
-
-
-themes = ['Bayesian', 'ChemPhys', 'ClinicalTrials', 'Cluster', 'DifferentialEquations', 'Distributions', 'Econometrics', 'Environmetrics', 'ExperimentalDesign', 'ExtremeValue', 'Finance', 'FunctionalData', 'Genetics', 'Graphics', 'HighPerformanceComputing', 'MachineLearning', 'MedicalImaging', 'MetaAnalysis', 'ModelDeployment', 'Multivariate', 'NaturalLanguageProcessing', 'NumericalMathematics', 'OfficialStatistics', 'Optimization', 'Pharmacokinetics', 'Phylogenetics', 'Psychometrics', 'ReproducibleResearch', 'Robust', 'SocialSciences', 'Spatial', 'SpatioTemporal', 'Survival', 'TimeSeries', 'WebTechnologies', 'gR']
-for theme in themes:
-    yield theme
-
-url ='https://cloud.r-project.org/web/views/' + str(theme) + '.html'
-print(url)
-
-
-
-#传入url,获取响应
+#传入url,获取响应  代码改进，如果出现链接中断异常，再次请求即可（从中断的地方）
 def get_one_page(url):
     headers = {
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+        'user-agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.0 x64; en-US; rv:1.9pre) Gecko/2008072421 Minefield/3.0.2pre'
     }
-    response = requests.get(url,headers=headers)
+    response = requests.get(url)
     html =response.text
     return html
-
 
 #解析pdf文件的下载地址
 def parse_one_page(html):
@@ -146,24 +141,20 @@ def parse_one_page(html):
 def getFile(url):
     response = requests.get(url)
     if response.status_code == 200:
-        for i in themes:
-
-            with open("/home/karson/R-theme-docs/%s/%s .pdf" % theme  %url.split("/")[-1][0:-4], "wb") as f:  # 切片之后优化了命名
-                f.write(response.content)
-                f.close()
+        with open("/home/karson/R-theme-docs/Finance/%s .pdf"  %url.split("/")[-1][0:-4], "wb") as f:  # 切片之后优化了命名
+            f.write(response.content)
+            f.close()
     else:
         pass
 
 
-
-
-html = get_one_page(start_link)
-link = parse_one_page(html)
-for i in link:
-    getFile(i)
-print("下载完成")
-
-
+if __name__ == "__main__":
+    url = 'https://cloud.r-project.org/web/views/Finance.html'
+    html = get_one_page(url)
+    link = parse_one_page(html)
+    for i in link:
+        getFile(i)
+    print("下载完成")
 
 
 
@@ -197,13 +188,6 @@ print("下载完成")
     # json.dump(content, open('result.txt', 'a', encoding='utf-8'))
 
 #存入mysql
-
-
-
-
-
-
-
 
 #存入MongoDB
 #
